@@ -22,8 +22,6 @@ namespace SensorGraph
 			InitializeComponent();
 		}
 
-		private string FilePath => @"\\192.168.3.14\Program\BME280\log.csv";
-
 		private void MainForm_Shown(object sender, EventArgs e)
 		{
 			SetupChart();
@@ -317,5 +315,7 @@ namespace SensorGraph
 					control,
 					new object[] { IsDoubleBuffered });
 		}
+
+		private string FilePath => @"\\192.168.3.14\Program\BME280\log.csv";
 	}
 }
